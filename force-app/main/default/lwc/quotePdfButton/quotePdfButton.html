@@ -1,0 +1,33 @@
+<template>
+
+    <lightning-card  title="Generate PDF">
+        <!--
+        
+        <lightning-button label="Generate PDF"  variant="brand"  onclick={generatePdf}  class="slds-m-around_small"></lightning-button>
+        <lightning-button label="Generate PDF and Save"  variant="brand-outline" onclick={handleGeneratePdfAndSave} class="slds-m-around_small"></lightning-button>
+        <lightning-button label="Generate PDF and Send Email" variant="brand-outline" onclick={handleGeneratePdfAndSendEmail} class="slds-m-around_small"></lightning-button>
+        <lightning-button label="Upload PDF to Slack" variant="brand-outline" onclick={handleUploadPdfToSlack} class="slds-m-around_small"></lightning-button> -->
+
+
+        <lightning-layout  horizontal-align="spread"  multiple-rows="true">
+            <lightning-layout-item size="3" medium-device-size="3" small-device-size="3" large-device-size="3" padding="horizontal-small">
+                <lightning-button label="Generate PDF"  variant="brand"  onclick={generatePdf}  class="slds-m-around_small"></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" medium-device-size="3" small-device-size="3" large-device-size="3" padding="horizontal-small">
+                <lightning-button label="Generate PDF and Save"  variant="Neutral"  onclick={handleGeneratePdfAndSave} class="slds-m-around_small"></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" medium-device-size="3" small-device-size="3" large-device-size="3" padding="horizontal-small">
+                <lightning-button label="Generate PDF and Send Email" variant="brand"  onclick={handleGeneratePdfAndSendEmail} class="slds-m-around_small"></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" medium-device-size="3" small-device-size="3" large-device-size="3" padding="horizontal-small">
+                <lightning-button label="Upload PDF to Slack" variant="brand-outline" onclick={handleUploadPdfToSlack} class="slds-m-around_small"></lightning-button> 
+            </lightning-layout-item>
+        </lightning-layout>
+
+           
+        
+
+    </lightning-card>
+
+    
+</template>

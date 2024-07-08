@@ -1,0 +1,27 @@
+<!-- https://creative-otter-a28e1k-dev-ed.trailblaze.lightning.force.com//apex/QuotePDF?id=0Q0dL000000799pSAA -->
+<apex:page controller="QuotePDFController" renderAs="pdf">
+    <apex:pageBlock title="Quote Details">
+        <apex:pageBlockSection columns="1">
+            <apex:outputLabel value="Quote ID:" />
+            <apex:outputText value="{!quote.Id}" />
+            
+            <apex:outputLabel value="Opportunity Name:" />
+            <apex:outputText value="{!quote.Opportunity.Name}" />
+            
+            <apex:outputLabel value="Account Name:" />
+            <apex:outputText value="{!quote.Account.Name}" />
+            
+            <apex:outputLabel value="Subtotal:" />
+            <apex:outputText value="{!quote.Subtotal}" />
+            
+            <apex:outputLabel value="Discount:" />
+            <apex:outputText value="{!quote.Discount}" />
+            
+            <apex:outputLabel value="Total Price:" />
+            <apex:outputText value="{!quote.TotalPrice}" />
+            
+            <apex:outputLabel value="Grand Total:" />
+            <apex:outputText value="{!quote.GrandTotal}" />
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
